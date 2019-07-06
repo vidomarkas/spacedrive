@@ -198,8 +198,17 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 140vh;
-  overflow: hidden; }
+  height: 190vh; }
+  .home a {
+    color: #fff;
+    padding: 0 2.4rem 0 2.4rem; }
+
+.home-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem; }
 
 .contact-menu {
   font-size: 1.6rem;
@@ -209,15 +218,97 @@ body {
   letter-spacing: 0.1rem;
   background-color: rgba(255, 255, 255, 0.02);
   border-bottom: 0.1rem solid rgba(99, 55, 169, 0.12); }
-  .contact-menu a {
-    color: #fff;
-    padding: 0 2.4rem 0 2.4rem; }
   .contact-menu span {
     color: rgba(255, 255, 255, 0.39);
-    list-style: 2.4rem; }
-  .contact-menu__container {
-    max-width: 153.6rem;
-    margin: 0 auto;
+    line-height: 2.4rem; }
+
+.main-menu .logo {
+  font-size: 4rem; }
+
+.main-menu .navigation__list {
+  display: flex;
+  flex-direction: row; }
+
+.main-menu .navigation__link {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Poppins";
+  padding: 0 0.4rem 0 0.4rem; }
+
+.header {
+  display: flex;
+  flex-direction: row; }
+  .header .slogan-box {
+    margin-top: 9rem;
+    padding-left: 2rem; }
+    .header .slogan-box .slogan h1 {
+      line-height: 8rem;
+      font-size: 6.3rem; }
+    .header .slogan-box .slogan p {
+      line-height: 3.6rem;
+      font-size: 2.2rem;
+      font-family: "Poppins";
+      color: #e6e6e6;
+      margin-top: 4.5rem; }
+    .header .slogan-box .slogan .cta {
+      background-color: #d55e54;
+      font-weight: 700;
+      font-family: "Poppins";
+      font-size: 1.6rem;
+      line-height: 3rem;
+      border-radius: 50px;
+      display: inline-block;
+      padding: 1.3rem 4.6rem;
+      margin-top: 4.5rem; }
+      .header .slogan-box .slogan .cta:hover {
+        text-shadow: 0px 0px 3px #fff; }
+  .header__image {
+    margin-top: -5rem; }
+
+.domain-search {
+  margin: 0 auto;
+  width: 100rem; }
+  .domain-search h2 {
+    line-height: 6rem;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-bottom: 6rem; }
+  .domain-search form {
     display: flex;
-    justify-content: space-between;
-    padding: 2rem; }
+    flex-direction: row;
+    transform: translate(80px, 0px);
+    margin-bottom: 4rem; }
+  .domain-search__input {
+    border: none;
+    height: 6rem;
+    border-radius: 50px;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 1.7rem;
+    font-family: "Poppins";
+    padding-left: 5rem;
+    padding-right: 13rem; }
+    .domain-search__input:focus {
+      outline: none; }
+    .domain-search__input::placeholder {
+      opacity: 0.6; }
+  .domain-search .search-btn {
+    background-image: linear-gradient(to right bottom, #f873cf, #a34dc0, #5129b2);
+    display: inline-block;
+    padding: 1.4rem 4.6rem;
+    border-radius: 50px;
+    transform: translate(-145px, 0px);
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    font-family: "Poppins";
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.16); }
+  .domain-search .domain-prices {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-family: "Poppins";
+    justify-content: center; }
+    .domain-search .domain-prices li {
+      padding: 0 2rem; }

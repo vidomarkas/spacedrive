@@ -1,0 +1,23 @@
+.services {
+  background-color: #fff;
+  text-align: center;
+
+  &_heading {
+    width: 45%;
+    margin: 0 auto 15rem auto;
+    &-title {
+      padding-top: 10rem;
+      padding-bottom: 2rem;
+      color: #6b3c96;
+      font-size: 4.6rem;
+      line-height: 6.1rem;
+    }
+
+    &-subheading {
+      color: #4e4e4e;
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 300;
+    }
+  }
+}

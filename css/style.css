@@ -198,7 +198,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 190vh; }
+  height: auto; }
   .home a {
     color: #fff;
     padding: 0 2.4rem 0 2.4rem; }
@@ -309,6 +309,82 @@ body {
     font-size: 1.6rem;
     line-height: 2.8rem;
     font-family: "Poppins";
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 17rem; }
     .domain-search .domain-prices li {
       padding: 0 2rem; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10rem;
+  margin-bottom: 16rem; }
+  .features__box {
+    background-color: #fff;
+    text-align: center;
+    padding: 3rem 4rem;
+    border-radius: 25px; }
+    .features__box img {
+      width: 8rem;
+      height: 7rem;
+      margin-bottom: 1.4rem; }
+  .features__title {
+    color: #222323;
+    margin-bottom: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 700; }
+  .features__text {
+    color: #606060;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    font-family: "Poppins"; }
+
+.choose-us {
+  background: linear-gradient(rgba(17, 1, 105, 0.72), rgba(17, 1, 105, 0.72)), url("../../assets/servers_background.png");
+  height: 800px;
+  display: flex;
+  flex-direction: row; }
+  .choose-us__text_box {
+    margin-top: 14rem;
+    width: 45%; }
+    .choose-us__text_box-title {
+      font-size: 5rem;
+      line-height: 6.6rem;
+      margin-bottom: 3.8rem; }
+    .choose-us__text_box-text {
+      margin-bottom: 3rem;
+      font-family: "Poppins";
+      font-size: 1.6rem;
+      line-height: 2.4rem; }
+      .choose-us__text_box-text:last-of-type {
+        margin-bottom: 7rem; }
+    .choose-us__text_box-btn {
+      padding: 1.7rem 4.5rem;
+      background-color: rgba(216, 216, 216, 0.29);
+      color: #fff;
+      border-radius: 50px;
+      font-family: "Poppins";
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      font-weight: 400; }
+  .choose-us__image {
+    margin-top: 14rem; }
+
+.services {
+  background-color: #fff;
+  text-align: center; }
+  .services_heading {
+    width: 45%;
+    margin: 0 auto 15rem auto; }
+    .services_heading-title {
+      padding-top: 10rem;
+      padding-bottom: 2rem;
+      color: #6b3c96;
+      font-size: 4.6rem;
+      line-height: 6.1rem; }
+    .services_heading-subheading {
+      color: #4e4e4e;
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 300; }

@@ -1,0 +1,44 @@
+.choose-us {
+  background: linear-gradient(rgba(17, 1, 105, 0.72), rgba(17, 1, 105, 0.72)),
+    url("../../assets/servers_background.png");
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+
+  &__text_box {
+    margin-top: 14rem;
+    width: 45%;
+
+    &-title {
+      font-size: 5rem;
+      line-height: 6.6rem;
+      margin-bottom: 3.8rem;
+    }
+
+    &-text {
+      margin-bottom: 3rem;
+      font-family: "Poppins";
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+
+      &:last-of-type {
+        margin-bottom: 7rem;
+      }
+    }
+
+    &-btn {
+      padding: 1.7rem 4.5rem;
+      background-color: rgba(216, 216, 216, 0.29);
+      color: #fff;
+      border-radius: 50px;
+      font-family: "Poppins";
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      font-weight: 400;
+    }
+  }
+
+  &__image {
+    margin-top: 14rem;
+  }
+}

@@ -1,0 +1,114 @@
+.footer {
+  background-color: #1b1543;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 95px 117px;
+  }
+
+  &__title {
+    font-family: "Poppins";
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__newsletter {
+    form {
+      display: flex;
+      flex-direction: row;
+    }
+    &__input {
+      border: none;
+      height: 48px;
+      border-radius: 5px;
+      line-height: 30px;
+      font-size: 15px;
+      font-family: "Poppins";
+      padding-left: 18px;
+      padding-right: 2rem;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        opacity: 0.6;
+      }
+    }
+
+    &__btn {
+      height: 48px;
+      border-radius: 5px;
+      background-color: #3ecced;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 32px;
+      border: none;
+      padding: 8px 29px;
+      cursor: pointer;
+
+      transform: translate(-15px, 0px);
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 137px;
+
+    &__container {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .copyright {
+      line-height: 2.8rem;
+      font-size: 1.4rem;
+      font-family: "Poppins";
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 2.8rem;
+      font-size: 1.4rem;
+      font-family: "Poppins";
+      padding-left: 1rem;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.address {
+  &__title {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2.5rem;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-family: "Poppins";
+  }
+}

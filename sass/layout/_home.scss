@@ -15,8 +15,11 @@ body {
   height: auto;
 
   a {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     padding: 0 2.4rem 0 2.4rem;
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -33,22 +36,25 @@ body {
     color: rgba(255, 255, 255, 0.39);
     line-height: 2.4rem;
   }
-
-  &__contacts {
-  }
-  &__links {
-  }
 }
 
 .main-menu {
   .logo {
     font-size: 4rem;
+    padding-left: 2rem;
+    span {
+      font-weight: 700;
+    }
   }
 
   .navigation {
     &__list {
       display: flex;
       flex-direction: row;
+    }
+
+    &-container {
+      align-items: center;
     }
 
     &__link {

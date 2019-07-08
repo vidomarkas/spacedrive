@@ -1,5 +1,7 @@
 .plans {
   background-image: url("../../assets/plan_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &_heading {
     width: 45%;
@@ -25,6 +27,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 9rem;
+    padding-bottom: 160px;
   }
 
   &__card {
@@ -59,7 +62,7 @@
         font-weight: 700;
         position: absolute;
         top: 0;
-        right: 1rem;
+        right: 0.5rem;
         font-family: "Poppins";
       }
     }

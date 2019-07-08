@@ -202,6 +202,87 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.footer {
+  background-color: #1b1543; }
+  .footer__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 95px 117px; }
+  .footer__title {
+    font-family: "Poppins";
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem; }
+  .footer__link {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    line-height: 2.5rem; }
+    .footer__link:hover {
+      color: #fff; }
+  .footer__newsletter form {
+    display: flex;
+    flex-direction: row; }
+  .footer__newsletter__input {
+    border: none;
+    height: 48px;
+    border-radius: 5px;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "Poppins";
+    padding-left: 18px;
+    padding-right: 2rem; }
+    .footer__newsletter__input:focus {
+      outline: none; }
+    .footer__newsletter__input::placeholder {
+      opacity: 0.6; }
+  .footer__newsletter__btn {
+    height: 48px;
+    border-radius: 5px;
+    background-color: #3ecced;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    border: none;
+    padding: 8px 29px;
+    cursor: pointer;
+    transform: translate(-15px, 0px); }
+  .footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 137px; }
+    .footer__bottom__container {
+      max-width: 90%;
+      margin: 0 auto; }
+    .footer__bottom .copyright {
+      line-height: 2.8rem;
+      font-size: 1.4rem;
+      font-family: "Poppins"; }
+    .footer__bottom a {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 2.8rem;
+      font-size: 1.4rem;
+      font-family: "Poppins";
+      padding-left: 1rem; }
+      .footer__bottom a:hover {
+        color: #fff; }
+
+.address__title {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 2.5rem; }
+  .address__title span {
+    font-weight: 700; }
+
+.address__text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-family: "Poppins"; }
+
 body {
   background-image: linear-gradient(to right bottom, #8908ad, #1f08a2); }
 
@@ -212,8 +293,10 @@ body {
   width: 100%;
   height: auto; }
   .home a {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     padding: 0 2.4rem 0 2.4rem; }
+    .home a:hover {
+      color: #fff; }
 
 .contact-menu {
   font-size: 1.6rem;
@@ -228,11 +311,17 @@ body {
     line-height: 2.4rem; }
 
 .main-menu .logo {
-  font-size: 4rem; }
+  font-size: 4rem;
+  padding-left: 2rem; }
+  .main-menu .logo span {
+    font-weight: 700; }
 
 .main-menu .navigation__list {
   display: flex;
   flex-direction: row; }
+
+.main-menu .navigation-container {
+  align-items: center; }
 
 .main-menu .navigation__link {
   font-size: 2rem;
@@ -465,7 +554,9 @@ body {
     color: #fff; }
 
 .plans {
-  background-image: url("../../assets/plan_background.png"); }
+  background-image: url("../../assets/plan_background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
   .plans_heading {
     width: 45%;
     margin: 0 auto 15rem auto;
@@ -484,7 +575,8 @@ body {
   .plans__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 9rem; }
+    grid-column-gap: 9rem;
+    padding-bottom: 160px; }
   .plans__card {
     text-align: center;
     background-color: #fff;
@@ -512,7 +604,7 @@ body {
         font-weight: 700;
         position: absolute;
         top: 0;
-        right: 1rem;
+        right: 0.5rem;
         font-family: "Poppins"; }
     .plans__card-features {
       color: #5f6874;

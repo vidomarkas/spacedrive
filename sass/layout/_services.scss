@@ -1,10 +1,10 @@
 .services {
   background-color: #fff;
-  text-align: center;
 
   &_heading {
     width: 45%;
     margin: 0 auto 15rem auto;
+    text-align: center;
     &-title {
       padding-top: 10rem;
       padding-bottom: 2rem;
@@ -19,5 +19,39 @@
       line-height: 3rem;
       font-weight: 300;
     }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 9rem;
+    grid-row-gap: 8rem;
+
+    &-element {
+      text-align: left;
+    }
+  }
+
+  &__img {
+    margin-bottom: 3.6rem;
+  }
+
+  &__title {
+    color: #393743;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 400;
+    margin-bottom: 3.6rem;
+    font-family: "Poppins";
+  }
+
+  &__text {
+    color: #4e4e4e;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    margin-bottom: 3.6rem;
+    font-family: "Poppins";
   }
 }

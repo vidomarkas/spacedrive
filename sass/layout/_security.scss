@@ -1,0 +1,44 @@
+.security {
+  &__header1 {
+    padding-top: 15rem;
+    &__textbox {
+      text-align: left;
+      width: 45%;
+    }
+  }
+
+  &__title {
+    line-height: 5rem;
+    font-size: 3.6rem;
+    padding-top: 4rem;
+  }
+
+  &__subheading {
+    line-height: 3.1rem;
+    font-size: 1.8rem;
+    font-family: "Poppins";
+    font-weight: 300;
+  }
+
+  &__features {
+    li {
+      margin-top: 3rem;
+      line-height: 3.1rem;
+      font-size: 1.8rem;
+      font-family: "Poppins";
+      font-weight: 300;
+    }
+  }
+
+  .svg-icon {
+    display: inline-flex;
+    align-self: center;
+    padding-right: 2rem;
+    svg {
+      height: 2em;
+      width: 2em;
+      top: 0.5em;
+      position: relative;
+    }
+  }
+}

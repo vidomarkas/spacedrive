@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap");
 html,
 body,
@@ -159,6 +159,18 @@ html {
 body {
   box-sizing: border-box; }
 
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 2rem; }
+
+.flex-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem; }
+
 body {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
@@ -202,13 +214,6 @@ body {
   .home a {
     color: #fff;
     padding: 0 2.4rem 0 2.4rem; }
-
-.home-container {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem; }
 
 .contact-menu {
   font-size: 1.6rem;
@@ -259,9 +264,11 @@ body {
       border-radius: 50px;
       display: inline-block;
       padding: 1.3rem 4.6rem;
-      margin-top: 4.5rem; }
+      margin-top: 4.5rem;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
       .header .slogan-box .slogan .cta:hover {
-        text-shadow: 0px 0px 3px #fff; }
+        text-shadow: 0px 0px 3px #fff;
+        box-shadow: none; }
   .header__image {
     margin-top: -5rem; }
 
@@ -372,11 +379,11 @@ body {
     margin-top: 14rem; }
 
 .services {
-  background-color: #fff;
-  text-align: center; }
+  background-color: #fff; }
   .services_heading {
     width: 45%;
-    margin: 0 auto 15rem auto; }
+    margin: 0 auto 15rem auto;
+    text-align: center; }
     .services_heading-title {
       padding-top: 10rem;
       padding-bottom: 2rem;
@@ -388,3 +395,61 @@ body {
       font-size: 2rem;
       line-height: 3rem;
       font-weight: 300; }
+  .services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 9rem;
+    grid-row-gap: 8rem; }
+    .services__grid-element {
+      text-align: left; }
+  .services__img {
+    margin-bottom: 3.6rem; }
+  .services__title {
+    color: #393743;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 400;
+    margin-bottom: 3.6rem;
+    font-family: "Poppins"; }
+  .services__text {
+    color: #4e4e4e;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    font-weight: 300;
+    margin-bottom: 3.6rem;
+    font-family: "Poppins"; }
+
+.security__header1 {
+  padding-top: 15rem; }
+  .security__header1__textbox {
+    text-align: left;
+    width: 45%; }
+
+.security__title {
+  line-height: 5rem;
+  font-size: 3.6rem;
+  padding-top: 4rem; }
+
+.security__subheading {
+  line-height: 3.1rem;
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  font-weight: 300; }
+
+.security__features li {
+  margin-top: 3rem;
+  line-height: 3.1rem;
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  font-weight: 300; }
+
+.security .svg-icon {
+  display: inline-flex;
+  align-self: center;
+  padding-right: 2rem; }
+  .security .svg-icon svg {
+    height: 2em;
+    width: 2em;
+    top: 0.5em;
+    position: relative; }

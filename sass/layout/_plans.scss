@@ -1,0 +1,116 @@
+.plans {
+  background-image: url("../../assets/plan_background.png");
+
+  &_heading {
+    width: 45%;
+    margin: 0 auto 15rem auto;
+    text-align: center;
+    &-title {
+      padding-top: 10rem;
+      padding-bottom: 2rem;
+      font-size: 4.6rem;
+      line-height: 5.3rem;
+    }
+
+    &-subheading {
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 300;
+      font-family: "Poppins";
+      margin-bottom: 80px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 9rem;
+  }
+
+  &__card {
+    text-align: center;
+    background-color: #fff;
+
+    padding: 8rem 10rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 268px;
+
+    &-title {
+      color: #706a93;
+      font-size: 2.4rem;
+      line-height: 4.9rem;
+      font-weight: 400;
+      font-family: "Poppins";
+      margin-bottom: 3rem;
+    }
+
+    &-capacity {
+      color: #000;
+      font-size: 6rem;
+      line-height: 6rem;
+      position: relative;
+      font-family: "Poppins";
+      margin-bottom: 3rem;
+
+      span {
+        color: #706a93;
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        font-family: "Poppins";
+      }
+    }
+
+    &-features {
+      color: #5f6874;
+      font-family: "Poppins";
+      font-size: 1.7rem;
+      line-height: 3rem;
+
+      li {
+        margin-bottom: 1rem;
+      }
+      :last-child {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-price {
+      color: #000;
+      font-family: "Poppins";
+      font-size: 2.1rem;
+      line-height: 4rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.buy-now {
+  border-radius: 20px;
+  position: relative;
+
+  &__link {
+    font-family: "Poppins";
+    position: absolute;
+    right: 6px;
+    bottom: 45px;
+    transform: rotate(-45deg);
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.8rem;
+    font-size: 1.9rem;
+  }
+}
+
+.buy-now--50 {
+  background-color: #9262ff;
+}
+.buy-now--100 {
+  background-color: #62e7ff;
+}
+.buy-now--500 {
+  background-color: #62ff98;
+}

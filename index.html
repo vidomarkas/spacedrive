@@ -142,7 +142,7 @@
         </p>
       </div>
       <div class="services__grid container">
-        <div class="services_grid-element">
+        <div class="services__grid-element">
           <img
             class="services__img"
             src="./assets/services_cloud_hosting.svg"
@@ -155,7 +155,7 @@
             solutions. Cloud hosting is an Infrastructure as a Service...
           </p>
         </div>
-        <div class="services_grid-element">
+        <div class="services__grid-element">
           <img
             class="services__img"
             src="./assets/services_dedicated_hosting.svg"
@@ -168,7 +168,7 @@
             Hosts allow you to use your existing per-socket, per-core,...
           </p>
         </div>
-        <div class="services_grid-element">
+        <div class="services_grid-_element">
           <img
             class="services__img"
             src="./assets/services_shared_hosting.svg"
@@ -181,7 +181,7 @@
             name, from a single Web server, Although shared hosting is a less...
           </p>
         </div>
-        <div class="services_grid-element">
+        <div class="services__grid-element">
           <img
             class="services__img"
             src="./assets/services_reseller_hosting.svg"
@@ -195,7 +195,7 @@
             purchases..
           </p>
         </div>
-        <div class="services_grid-element">
+        <div class="services__grid-element">
           <img
             class="services__img"
             src="./assets/services_VPS_hosting.svg"
@@ -209,7 +209,7 @@
             between...
           </p>
         </div>
-        <div class="services_grid-element">
+        <div class="services__grid-element">
           <img
             class="services__img"
             src="./assets/services_domain_registration.svg"
@@ -224,9 +224,10 @@
         </div>
       </div>
     </section>
+
     <section class="security">
-      <div class="security__header1 flex-container">
-        <div class="security__header1__textbox">
+      <div class="security__header flex-container">
+        <div class="security__header__textbox">
           <div class="security__title">
             <h2>Secure service your website</h2>
           </div>
@@ -296,15 +297,141 @@
               Global Datacenters
             </li>
           </ul>
-          <a href="#">Read More...</a>
+          <a class="security__link" href="#">Read More....</a>
         </div>
-        <div class="security__header1__image">
+        <div class="security__header__image">
           <img src="./assets/security_server.svg" alt="security_server" />
         </div>
       </div>
-      <div class="security__header2">
-        <div class="security__header2__textbox"></div>
-        <div class="security__header2__image"></div>
+      <div class="security__header flex-container">
+        <div class="security__header__image">
+          <img src="./assets/security_person.svg" alt="security_person" />
+        </div>
+        <div class="security__header__textbox">
+          <div class="security__title">
+            <h2>Secure domain registration</h2>
+          </div>
+          <div class="security__subheading">
+            <p>
+              Dedicated Hosts. An Amazon EC2 Dedicated Host is a physical server
+              with EC2 instance capacity fully dedicated to your use. Dedicated
+              Hosts allow you to use your existing per-socket, per-core,...
+            </p>
+          </div>
+          <ul class="security__features">
+            <li>
+              <div class="svg-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36.794"
+                  height="36.794"
+                  viewBox="0 0 36.794 36.794"
+                >
+                  <path
+                    id="checked_3_"
+                    data-name="checked (3)"
+                    d="M18.4,0a18.4,18.4,0,1,0,18.4,18.4A18.4,18.4,0,0,0,18.4,0ZM15.022,27.847l-8.1-8.1,2.7-2.7,5.4,5.4L27.172,10.3l2.7,2.7Z"
+                    transform="translate(0)"
+                    fill="#6ac259"
+                  />
+                </svg>
+              </div>
+              Web Asset Delivery
+            </li>
+            <li>
+              <div class="svg-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36.794"
+                  height="36.794"
+                  viewBox="0 0 36.794 36.794"
+                >
+                  <path
+                    id="checked_3_"
+                    data-name="checked (3)"
+                    d="M18.4,0a18.4,18.4,0,1,0,18.4,18.4A18.4,18.4,0,0,0,18.4,0ZM15.022,27.847l-8.1-8.1,2.7-2.7,5.4,5.4L27.172,10.3l2.7,2.7Z"
+                    transform="translate(0)"
+                    fill="#6ac259"
+                  />
+                </svg>
+              </div>
+              24/7 Dedicated Support
+            </li>
+            <li>
+              <div class="svg-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36.794"
+                  height="36.794"
+                  viewBox="0 0 36.794 36.794"
+                >
+                  <path
+                    id="checked_3_"
+                    data-name="checked (3)"
+                    d="M18.4,0a18.4,18.4,0,1,0,18.4,18.4A18.4,18.4,0,0,0,18.4,0ZM15.022,27.847l-8.1-8.1,2.7-2.7,5.4,5.4L27.172,10.3l2.7,2.7Z"
+                    transform="translate(0)"
+                    fill="#6ac259"
+                  />
+                </svg>
+              </div>
+              Global Datacenters
+            </li>
+          </ul>
+          <a class="security__link" href="#">Read More....</a>
+        </div>
+      </div>
+    </section>
+    <section class="plans">
+      <div class="plans_heading">
+        <h2 class="plans_heading-title">Choose you plan</h2>
+        <p class="plans_heading-subheading">
+          These are the most popular plans we provide, however please contact us
+          if you are in need of a custom plan
+        </p>
+      </div>
+      <div class="plans__grid container">
+        <div class="buy-now buy-now--50">
+          <div class="plans__card">
+            <h4 class="plans__card-title">BASIC</h4>
+            <div class="plans__card-capacity">50 <span>GB</span></div>
+            <ul class="plans__card-features">
+              <li>1 Free Domain</li>
+              <li>300 GB SSD Disk</li>
+              <li>Special Offers</li>
+              <li>Unlimited Support</li>
+            </ul>
+            <div class="plans__card-price">£7/ month</div>
+          </div>
+          <a href="#" class="buy-now__link">Buy Now</a>
+        </div>
+        <div class="buy-now buy-now--100">
+          <div class="plans__card">
+            <h4 class="plans__card-title">ADVANCED</h4>
+            <div class="plans__card-capacity">100 <span>GB</span></div>
+            <ul class="plans__card-features">
+              <li>1 Free Domain</li>
+              <li>300 GB SSD Disk</li>
+              <li>Special Offers</li>
+              <li>Unlimited Support</li>
+            </ul>
+            <div class="plans__card-price">£13/ month</div>
+          </div>
+          <a href="#" class="buy-now__link">Buy Now</a>
+        </div>
+        <div class="buy-now buy-now--500">
+          <div class="plans__card">
+            <h4 class="plans__card-title">PROFESSIONAL</h4>
+            <div class="plans__card-capacity">500 <span>GB</span></div>
+            <ul class="plans__card-features">
+              <li>1 Free Domain</li>
+              <li>300 GB SSD Disk</li>
+              <li>Special Offers</li>
+              <li>Unlimited Support</li>
+            </ul>
+            <div class="plans__card-price">£60/ month</div>
+          </div>
+          <a href="#" class="buy-now__link">Buy Now</a>
+        </div>
       </div>
     </section>
   </body>

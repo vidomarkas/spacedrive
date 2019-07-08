@@ -1,10 +1,20 @@
 .security {
-  &__header1 {
-    padding-top: 15rem;
+  border-bottom: 1px solid #707070;
+
+  &__header {
+    padding-top: 150px;
+    &:last-of-type {
+      padding-top: 100px;
+      margin-bottom: 157px;
+    }
     &__textbox {
       text-align: left;
       width: 45%;
     }
+  }
+
+  &__features {
+    margin-bottom: 3rem;
   }
 
   &__title {
@@ -18,6 +28,7 @@
     font-size: 1.8rem;
     font-family: "Poppins";
     font-weight: 300;
+    margin-top: 3rem;
   }
 
   &__features {
@@ -40,5 +51,13 @@
       top: 0.5em;
       position: relative;
     }
+  }
+
+  &__link {
+    line-height: 3.1rem;
+    font-size: 1.8rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #fff;
   }
 }

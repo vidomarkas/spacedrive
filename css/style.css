@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&display=swap");
 html,
 body,
 div,
@@ -420,36 +420,135 @@ body {
     margin-bottom: 3.6rem;
     font-family: "Poppins"; }
 
-.security__header1 {
-  padding-top: 15rem; }
-  .security__header1__textbox {
-    text-align: left;
-    width: 45%; }
+.security {
+  border-bottom: 1px solid #707070; }
+  .security__header {
+    padding-top: 150px; }
+    .security__header:last-of-type {
+      padding-top: 100px;
+      margin-bottom: 157px; }
+    .security__header__textbox {
+      text-align: left;
+      width: 45%; }
+  .security__features {
+    margin-bottom: 3rem; }
+  .security__title {
+    line-height: 5rem;
+    font-size: 3.6rem;
+    padding-top: 4rem; }
+  .security__subheading {
+    line-height: 3.1rem;
+    font-size: 1.8rem;
+    font-family: "Poppins";
+    font-weight: 300;
+    margin-top: 3rem; }
+  .security__features li {
+    margin-top: 3rem;
+    line-height: 3.1rem;
+    font-size: 1.8rem;
+    font-family: "Poppins";
+    font-weight: 300; }
+  .security .svg-icon {
+    display: inline-flex;
+    align-self: center;
+    padding-right: 2rem; }
+    .security .svg-icon svg {
+      height: 2em;
+      width: 2em;
+      top: 0.5em;
+      position: relative; }
+  .security__link {
+    line-height: 3.1rem;
+    font-size: 1.8rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #fff; }
 
-.security__title {
-  line-height: 5rem;
-  font-size: 3.6rem;
-  padding-top: 4rem; }
+.plans {
+  background-image: url("../../assets/plan_background.png"); }
+  .plans_heading {
+    width: 45%;
+    margin: 0 auto 15rem auto;
+    text-align: center; }
+    .plans_heading-title {
+      padding-top: 10rem;
+      padding-bottom: 2rem;
+      font-size: 4.6rem;
+      line-height: 5.3rem; }
+    .plans_heading-subheading {
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 300;
+      font-family: "Poppins";
+      margin-bottom: 80px; }
+  .plans__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 9rem; }
+  .plans__card {
+    text-align: center;
+    background-color: #fff;
+    padding: 8rem 10rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 268px; }
+    .plans__card-title {
+      color: #706a93;
+      font-size: 2.4rem;
+      line-height: 4.9rem;
+      font-weight: 400;
+      font-family: "Poppins";
+      margin-bottom: 3rem; }
+    .plans__card-capacity {
+      color: #000;
+      font-size: 6rem;
+      line-height: 6rem;
+      position: relative;
+      font-family: "Poppins";
+      margin-bottom: 3rem; }
+      .plans__card-capacity span {
+        color: #706a93;
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        font-family: "Poppins"; }
+    .plans__card-features {
+      color: #5f6874;
+      font-family: "Poppins";
+      font-size: 1.7rem;
+      line-height: 3rem; }
+      .plans__card-features li {
+        margin-bottom: 1rem; }
+      .plans__card-features :last-child {
+        margin-bottom: 2rem; }
+    .plans__card-price {
+      color: #000;
+      font-family: "Poppins";
+      font-size: 2.1rem;
+      line-height: 4rem;
+      font-weight: 400; }
 
-.security__subheading {
-  line-height: 3.1rem;
-  font-size: 1.8rem;
-  font-family: "Poppins";
-  font-weight: 300; }
+.buy-now {
+  border-radius: 20px;
+  position: relative; }
+  .buy-now__link {
+    font-family: "Poppins";
+    position: absolute;
+    right: 6px;
+    bottom: 45px;
+    transform: rotate(-45deg);
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.8rem;
+    font-size: 1.9rem; }
 
-.security__features li {
-  margin-top: 3rem;
-  line-height: 3.1rem;
-  font-size: 1.8rem;
-  font-family: "Poppins";
-  font-weight: 300; }
+.buy-now--50 {
+  background-color: #9262ff; }
 
-.security .svg-icon {
-  display: inline-flex;
-  align-self: center;
-  padding-right: 2rem; }
-  .security .svg-icon svg {
-    height: 2em;
-    width: 2em;
-    top: 0.5em;
-    position: relative; }
+.buy-now--100 {
+  background-color: #62e7ff; }
+
+.buy-now--500 {
+  background-color: #62ff98; }

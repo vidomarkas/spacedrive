@@ -4,6 +4,17 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 95px 117px;
+    @include respond(tab-port) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "address quicklinks support account"
+        "newsletter newsletter newsletter newsletter ";
+    }
+
+    @include respond(phone) {
+      padding: 5rem;
+    }
   }
 
   &__title {
@@ -25,6 +36,10 @@
   }
 
   &__newsletter {
+    @include respond(tab-port) {
+      grid-area: newsletter;
+      margin-top: 5rem;
+    }
     form {
       display: flex;
       flex-direction: row;
@@ -39,12 +54,40 @@
       padding-left: 18px;
       padding-right: 2rem;
 
+      @include respond(phone) {
+        //padding: 5rem;
+      }
+
       &:focus {
         outline: none;
       }
 
       &::placeholder {
         opacity: 0.6;
+      }
+    }
+
+    &__quiclinks {
+      @include respond(tab-port) {
+        grid-area: quicklinks;
+      }
+    }
+
+    &__title {
+      @include respond(tab-port) {
+        grid-area: title;
+      }
+    }
+
+    &__support {
+      @include respond(tab-port) {
+        grid-area: support;
+      }
+    }
+
+    &__account {
+      @include respond(tab-port) {
+        grid-area: account;
       }
     }
 
@@ -97,6 +140,9 @@
 }
 
 .address {
+  @include respond(tab-port) {
+    grid-area: address;
+  }
   &__title {
     font-size: 2rem;
     line-height: 3rem;

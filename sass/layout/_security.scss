@@ -3,13 +3,28 @@
 
   &__header {
     padding-top: 150px;
+
+    @include respond(tab-port) {
+      padding-top: 50px;
+    }
     &:last-of-type {
       padding-top: 100px;
       margin-bottom: 157px;
     }
+
     &__textbox {
       text-align: left;
       width: 45%;
+      @include respond(tab-port) {
+        width: 90%;
+      }
+    }
+    &__image {
+    }
+  }
+  &__header2 {
+    @include respond(tab-port) {
+      flex-direction: column;
     }
   }
 

@@ -1,13 +1,28 @@
 .choose-us {
   background: linear-gradient(rgba(17, 1, 105, 0.72), rgba(17, 1, 105, 0.72)),
-    url("../../assets/servers_background.png");
+    url("../../assets/servers_background.jpg");
   height: 800px;
   display: flex;
-  flex-direction: row;
+
+  @include respond(tab-port) {
+    padding-bottom: 10rem;
+  }
+
+  &__image {
+    margin-top: 14rem;
+    @include respond(tab-port) {
+      margin-top: 10rem;
+    }
+  }
 
   &__text_box {
     margin-top: 14rem;
     width: 45%;
+
+    @include respond(tab-port) {
+      margin-top: 2rem;
+      width: 90%;
+    }
 
     &-title {
       font-size: 5rem;
@@ -36,9 +51,5 @@
       line-height: 1.5rem;
       font-weight: 400;
     }
-  }
-
-  &__image {
-    margin-top: 14rem;
   }
 }

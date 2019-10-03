@@ -19,6 +19,10 @@ html {
     //width < 900px
     font-size: 50%; //1rem = 8px, 8/16 = 50%
   }
+  @include respond(phone) {
+    //width < 600px
+    font-size: 45%; //1rem = 8px, 8/16 = 50%
+  }
 
   @include respond(big-desktop) {
     //width > 1800px
@@ -28,6 +32,12 @@ html {
 
 body {
   box-sizing: border-box;
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(137, 8, 173),
+    rgb(31, 8, 162)
+  );
 }
 
 .container {
@@ -42,4 +52,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+
+  @include respond(tab-port) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    //padding-bottom: 10rem;
+  }
 }

@@ -52,7 +52,18 @@
           </div>
         </div>
         <div class="header__image">
-          <img src="assets/header_image.svg" alt="header_image" />
+          <picture>
+              <!-- <source
+              srcset="assets/header_image.png"
+              media="(max-width: 900px)"
+            /> -->
+            <source
+              srcset="assets/header_image450x450.png"
+              media="(max-width: 1200px)"
+            />
+            <source srcset="assets/header_image.png" />
+            <img src="assets/header_image.png" alt="header_image" />
+          </picture>
         </div>
       </div>
       <div class="domain-search ">
@@ -110,8 +121,8 @@
         </div>
       </div>
     </section>
-    <section class="choose-us">
-      <div class="flex-container">
+    <section class="choose-us flex-container">
+     
         <div class="choose-us__text_box">
           <h2 class="choose-us__text_box-title">Why Choose Us</h2>
           <p class="choose-us__text_box-text">
@@ -129,9 +140,16 @@
           <a href="#" class="choose-us__text_box-btn">READ MORE</a>
         </div>
         <div class="choose-us__image">
-          <img src="./assets/server.svg" alt="server" />
+          <picture>
+            <source
+              srcset="./assets/server400x305.png"
+              media="(max-width: 1200px)"
+            />
+            <source srcset="./assets/server.svg" />
+            <img src="./assets/server.svg" alt="server" />
+          </picture>
         </div>
-      </div>
+     
     </section>
     <section class="services ">
       <div class="services_heading">
@@ -300,13 +318,29 @@
           <a class="security__link" href="#">Read More....</a>
         </div>
         <div class="security__header__image">
-          <img src="./assets/security_server.svg" alt="security_server" />
+          <picture>
+            <source
+              srcset="./assets/security_server350x425.png"
+              media="(max-width: 1200px)"
+            />
+            <source srcset="./assets/security_server.svg" />
+            <img src="./assets/security_server.svg" alt="security_server" />
+          </picture>
         </div>
       </div>
-      <div class="security__header flex-container">
+      <div class="security__header flex-container security__header2">
         <div class="security__header__image">
-          <img src="./assets/security_person.svg" alt="security_person" />
+          
+          <picture>
+            <source
+              srcset="./assets/security_person350x425.png"
+              media="(max-width: 1200px)"
+            />
+            <source srcset="./assets/security_person.svg" />
+            <img src="./assets/security_person.svg" alt="security_person" />
+          </picture>
         </div>
+      
         <div class="security__header__textbox">
           <div class="security__title">
             <h2>Secure domain registration</h2>
@@ -380,6 +414,7 @@
           <a class="security__link" href="#">Read More....</a>
         </div>
       </div>
+    </div>
     </section>
     <section class="plans">
       <div class="plans_heading">

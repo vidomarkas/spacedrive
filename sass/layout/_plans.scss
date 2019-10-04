@@ -43,8 +43,11 @@
     padding: 8rem 10rem;
     border-radius: 20px;
     border-bottom-right-radius: 268px;
+    @include respond(tab-land) {
+      padding: 8rem 2rem;
+    }
     @include respond(tab-port) {
-      padding: 8rem 4rem;
+      padding: 6rem 1rem;
     }
     @include respond(phone) {
       padding: 8rem 4rem;
@@ -67,6 +70,7 @@
       position: relative;
       font-family: "Poppins";
       margin-bottom: 3rem;
+      display: inline-block;
 
       span {
         color: #706a93;
@@ -75,11 +79,8 @@
         font-weight: 700;
         position: absolute;
         top: 0;
-        right: 0.5rem;
+        right: -2.5rem;
         font-family: "Poppins";
-        @include respond(tab-port) {
-          position: relative;
-        }
       }
     }
 

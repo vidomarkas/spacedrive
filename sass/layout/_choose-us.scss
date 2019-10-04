@@ -3,6 +3,10 @@
     url("../../assets/servers_background.jpg");
   height: 800px;
   display: flex;
+  @include respond(tab-land) {
+    height: auto;
+    padding: 0 5rem 10rem 5rem;
+  }
 
   @include respond(tab-port) {
     padding-bottom: 10rem;

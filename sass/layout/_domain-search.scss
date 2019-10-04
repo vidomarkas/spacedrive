@@ -16,6 +16,9 @@
     flex-direction: row;
     transform: translate(80px, 0px);
     margin-bottom: 4rem;
+    @include respond(phone) {
+      transform: translate(50px, 0px);
+    }
   }
 
   &__input {
@@ -51,15 +54,18 @@
     border-radius: 50px;
     transform: translate(-145px, 0px);
     font-size: 1.8rem;
-    line-height: 2.8rem;
+    line-height: 3rem;
     font-weight: 700;
     font-family: "Poppins";
     box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.16);
     @include respond(tab-land) {
-      transform: translate(-140px, 0px);
+      transform: translate(-138px, 0px);
     }
     @include respond(tab-port) {
-      transform: translate(-125px, 0px);
+      transform: translate(-122px, 0px);
+    }
+    @include respond(phone) {
+      transform: translate(-108px, 0px);
     }
   }
   .domain-prices {
@@ -81,6 +87,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10rem;
   margin-bottom: 16rem;
+  @include respond(tab-land) {
+    padding: 0 5rem;
+  }
   @include respond(tab-port) {
     grid-gap: 2%;
   }

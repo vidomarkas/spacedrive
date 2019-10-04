@@ -38,22 +38,4 @@
       font-weight: 700;
     }
   }
-
-  .navigation {
-    &__list {
-      display: flex;
-      flex-direction: row;
-    }
-
-    &-container {
-      align-items: center;
-    }
-
-    &__link {
-      font-size: 2rem;
-      font-weight: 400;
-      font-family: "Poppins";
-      padding: 0 0.4rem 0 0.4rem;
-    }
-  }
 }

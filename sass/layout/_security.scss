@@ -3,6 +3,9 @@
 
   &__header {
     padding-top: 150px;
+    @include respond(tab-land) {
+      padding: 150px 7rem 0 7rem;
+    }
 
     @include respond(tab-port) {
       padding-top: 50px;
@@ -10,6 +13,10 @@
     &:last-of-type {
       padding-top: 100px;
       margin-bottom: 157px;
+      @include respond(tab-port) {
+        padding-top: 0;
+        margin-bottom: 50px;
+      }
     }
 
     &__textbox {

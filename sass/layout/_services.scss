@@ -1,5 +1,8 @@
 .services {
   background-color: #fff;
+  @include respond(tab-land) {
+    padding: 0 5rem;
+  }
 
   &_heading {
     width: 45%;
@@ -27,9 +30,16 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 9rem;
     grid-row-gap: 8rem;
+    @include respond(tab-port) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &-element {
       text-align: left;
+      @include respond(tab-port) {
+        text-align: center;
+      }
     }
   }
 
@@ -53,5 +63,8 @@
     font-weight: 300;
     margin-bottom: 3.6rem;
     font-family: "Poppins";
+    @include respond(tab-port) {
+      text-align: left;
+    }
   }
 }

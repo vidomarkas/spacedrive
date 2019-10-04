@@ -11,6 +11,15 @@
         "address quicklinks support account"
         "newsletter newsletter newsletter newsletter ";
     }
+    @include respond(phone) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-row-gap: 2rem;
+      grid-template-areas:
+        " address quicklinks"
+        "support account"
+        " newsletter newsletter ";
+    }
 
     @include respond(phone) {
       padding: 5rem;
@@ -55,7 +64,13 @@
       padding-right: 2rem;
 
       @include respond(phone) {
-        //padding: 5rem;
+        height: 30px;
+        border-radius: 5px;
+        line-height: 20px;
+        font-size: 10px;
+        font-family: "Poppins";
+        padding-left: 18px;
+        padding-right: 2rem;
       }
 
       &:focus {
@@ -104,6 +119,17 @@
       cursor: pointer;
 
       transform: translate(-15px, 0px);
+      @include respond(phone) {
+        height: 30px;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+
+        padding: 8px 15px;
+
+        transform: translate(-15px, 0px);
+      }
     }
   }
 

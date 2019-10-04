@@ -25,9 +25,16 @@
       </div>
       <div class="main-menu">
         <div class="navigation-container flex-container">
+            <a id="navigation__button-mobile" class="navigation__button">
+                <div class="hamburger">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </a>
           <div class="logo">Space<span>Drive</span></div>
-          <nav class="navigation">
-            <ul class="navigation__list">
+          <nav id="navigation" class="navigation">
+            <ul id="navigation__list" class="navigation__list">
               <li class="navigation__link"><a href="#home">Home</a></li>
               <li class="navigation__link"><a href="#domain">Domain</a></li>
               <li class="navigation__link"><a href="#hosting">Hosting</a></li>
@@ -141,6 +148,10 @@
         </div>
         <div class="choose-us__image">
           <picture>
+              <source
+              srcset="./assets/server200x153.png"
+              media="(max-width: 900px)"
+            />
             <source
               srcset="./assets/server400x305.png"
               media="(max-width: 1200px)"
@@ -536,5 +547,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

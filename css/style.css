@@ -167,6 +167,9 @@ body {
   max-width: 130rem;
   margin: 0 auto;
   padding: 2rem; }
+  @media (max-width: 37.5em) {
+    .container {
+      padding: 0; } }
 
 .flex-container {
   max-width: 130rem;
@@ -279,7 +282,7 @@ body {
     margin-bottom: 4rem; }
     @media (max-width: 37.5em) {
       .domain-search form {
-        transform: translate(50px, 0px); } }
+        transform: translate(30px, 0px); } }
   .domain-search__input {
     border: none;
     height: 6rem;
@@ -294,6 +297,10 @@ body {
       outline: none; }
     .domain-search__input::placeholder {
       opacity: 0.6; }
+    @media (max-width: 37.5em) {
+      .domain-search__input {
+        padding-left: 2rem;
+        padding-right: 9rem; } }
   .domain-search .search-btn {
     background-image: linear-gradient(to right bottom, #f873cf, #a34dc0, #5129b2);
     display: inline-block;
@@ -313,7 +320,7 @@ body {
         transform: translate(-122px, 0px); } }
     @media (max-width: 37.5em) {
       .domain-search .search-btn {
-        transform: translate(-108px, 0px); } }
+        transform: translate(-59px, 0px); } }
   .domain-search .domain-prices {
     display: flex;
     flex-direction: row;
@@ -336,6 +343,10 @@ body {
   @media (max-width: 56.25em) {
     .features {
       grid-gap: 2%; } }
+  @media (max-width: 37.5em) {
+    .features {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr); } }
   .features__box {
     background-color: #fff;
     text-align: center;
@@ -373,6 +384,12 @@ body {
         grid-template-areas: "address quicklinks support account" "newsletter newsletter newsletter newsletter "; } }
     @media (max-width: 37.5em) {
       .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 2rem;
+        grid-template-areas: " address quicklinks" "support account" " newsletter newsletter "; } }
+    @media (max-width: 37.5em) {
+      .footer__grid {
         padding: 5rem; } }
   .footer__title {
     font-family: "Poppins";
@@ -403,6 +420,15 @@ body {
     font-family: "Poppins";
     padding-left: 18px;
     padding-right: 2rem; }
+    @media (max-width: 37.5em) {
+      .footer__newsletter__input {
+        height: 30px;
+        border-radius: 5px;
+        line-height: 20px;
+        font-size: 10px;
+        font-family: "Poppins";
+        padding-left: 18px;
+        padding-right: 2rem; } }
     .footer__newsletter__input:focus {
       outline: none; }
     .footer__newsletter__input::placeholder {
@@ -431,6 +457,14 @@ body {
     padding: 8px 29px;
     cursor: pointer;
     transform: translate(-15px, 0px); }
+    @media (max-width: 37.5em) {
+      .footer__newsletter__btn {
+        height: 30px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px 15px;
+        transform: translate(-15px, 0px); } }
   .footer__bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
@@ -471,33 +505,61 @@ body {
 
 @media (max-width: 37.5em) {
   .navigation {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: black;
-    z-index: 5000; } }
+    display: none; } }
+
+.navigation__mobile {
+  position: fixed;
+  background-color: #2c2525;
+  width: 100%;
+  height: 100vh;
+  z-index: 2000;
+  display: block;
+  transform: translate(-50%, -50%); }
 
 .navigation__list {
-  display: flex; }
-  @media (max-width: 37.5em) {
-    .navigation__list {
-      background-color: green;
-      display: block;
-      top: 50%;
-      left: 50%;
-      transform: translate(40%, 120%); } }
+  height: 3rem; }
 
 .navigation__link {
   font-size: 2rem;
   font-weight: 400;
   font-family: "Poppins";
   padding: 0 0.4rem 0 0.4rem; }
+
+.hamburger {
+  display: none; }
   @media (max-width: 37.5em) {
-    .navigation__link {
-      padding: 0;
-      display: block; } }
+    .hamburger {
+      display: inline-block;
+      cursor: pointer;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 2rem 3rem;
+      z-index: 5000; } }
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+  box-shadow: 0px 2px 3px -1px #5f30ff80;
+  border-radius: 2px; }
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+  background-color: #fff;
+  box-shadow: none; }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+  background-color: #fff;
+  box-shadow: none; }
 
 .home {
   background-image: url("../../assets/header_background_figure.svg");
@@ -604,6 +666,9 @@ body {
       .services__grid {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 37.5em) {
+      .services__grid {
+        grid-column-gap: 4rem; } }
     .services__grid-element {
       text-align: left; }
       @media (max-width: 56.25em) {
@@ -734,8 +799,7 @@ body {
         padding: 6rem 1rem; } }
     @media (max-width: 37.5em) {
       .plans__card {
-        padding: 8rem 4rem;
-        width: 400px; } }
+        padding: 8rem 4rem; } }
     .plans__card-title {
       color: #706a93;
       font-size: 2.4rem;
@@ -779,6 +843,9 @@ body {
 .buy-now {
   border-radius: 20px;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .buy-now {
+      width: 90%; } }
   .buy-now__link {
     font-family: "Poppins";
     position: absolute;

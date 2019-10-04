@@ -44,6 +44,9 @@ body {
   max-width: 130rem;
   margin: 0 auto;
   padding: 2rem;
+  @include respond(phone) {
+    padding: 0;
+  }
 }
 
 .flex-container {

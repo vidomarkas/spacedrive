@@ -51,7 +51,6 @@
     }
     @include respond(phone) {
       padding: 8rem 4rem;
-      width: 400px;
     }
 
     &-title {
@@ -111,6 +110,9 @@
 .buy-now {
   border-radius: 20px;
   position: relative;
+  @include respond(phone) {
+    width: 90%;
+  }
 
   &__link {
     font-family: "Poppins";

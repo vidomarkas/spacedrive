@@ -81,8 +81,15 @@
     font-family: "Poppins";
     justify-content: center;
     margin-bottom: 17rem;
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+
     li {
       padding: 0 2rem;
+      @include respond(phone) {
+        padding: 0 0.5rem;
+      }
     }
   }
 }

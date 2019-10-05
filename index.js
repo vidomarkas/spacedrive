@@ -4,7 +4,9 @@ const nav = document.querySelector("#navigation");
 const navList = document.querySelector("#navigation__list");
 
 hamburger.addEventListener("click", () => {
-  console.log("y");
-  navList.classList.toggle("navigation__mobile");
-  nav.classList.toggle("navigation");
+  if (navMobile.style.display === "block") {
+    navMobile.style.display = "none";
+  } else {
+    navMobile.style.display = "block";
+  }
 });

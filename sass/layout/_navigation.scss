@@ -3,27 +3,18 @@
     display: none;
   }
 
-  &__mobile {
-    position: fixed;
-    background-color: rgb(44, 37, 37);
-    width: 100%;
-    height: 100vh;
-    z-index: 2000;
-    display: block;
-    transform: translate(-50%, -50%);
-  }
   &__list {
-    //display: flex;
+    display: flex;
+    flex-direction: row;
     height: 3rem;
 
     @include respond(phone) {
-      //flex-direction: column;
+      flex-direction: column;
+      background-color: blue;
     }
   }
 
   &-container {
-    @include respond(phone) {
-    }
   }
 
   &__link {
@@ -33,7 +24,31 @@
     padding: 0 0.4rem 0 0.4rem;
   }
 
-  &__active {
+  &__mobile {
+    position: fixed;
+    background-image: linear-gradient(
+      to right bottom,
+      rgb(137, 8, 173),
+      rgb(31, 8, 162)
+    );
+    width: 100%;
+    height: 100vh;
+    z-index: 2000;
+    display: block;
+  }
+
+  &__mobile__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__mobile__link {
+    font-size: 3rem;
+    a {
+      color: #fff;
+    }
   }
 }
 

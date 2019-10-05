@@ -62,4 +62,8 @@ body {
     justify-items: center;
     //padding-bottom: 10rem;
   }
+
+  @include respond(phone) {
+    padding: 0;
+  }
 }

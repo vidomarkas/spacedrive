@@ -182,6 +182,9 @@ body {
       flex-direction: column-reverse;
       align-items: center;
       justify-items: center; } }
+  @media (max-width: 37.5em) {
+    .flex-container {
+      padding: 0; } }
 
 body {
   font-family: "Roboto Slab", serif;
@@ -534,7 +537,7 @@ body {
   width: 100%;
   height: 100vh;
   z-index: 2000;
-  display: block; }
+  display: none; }
 
 .navigation__mobile__list {
   position: absolute;
